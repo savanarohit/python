@@ -1,5 +1,5 @@
 # python
-Python Tutorials
+Python 
 
 1 Python Basics <br>
 2 Object Oriented Python <br>
