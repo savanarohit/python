@@ -21,7 +21,7 @@ student['laptop'] = 'Dell'
 print(student)
 
 # updating multiple keys
-student.update({'name': 'savana', 'age': '34', 'phone': '123456'})
+student.update({'name': 'savana', 'age': '21', 'phone': '123456'})
 print(student)
 
 # delete a specific value
