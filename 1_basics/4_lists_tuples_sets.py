@@ -1,4 +1,4 @@
-# list - sequential , non duplicate & unordered data
+# list - sequential , non duplicate, unordered data and Immutable data type
 courses = ['math', 'science', 'physics', 'chemistry', 'geography']
 
 # print list's items
@@ -65,3 +65,64 @@ print(sum(number))
 # Find the index of certain item in the list
 number = [1, 4, 2, 9, 6, 12, 15]
 print(number.index(9))
+
+# print all items of a list using for loop
+number = [1, 4, 2, 9, 6, 12, 15]
+for num in number:
+    print(num)
+
+# print index and items both
+for index, num in enumerate(number):
+    print(index, num)           # index will start from 0
+
+# print item from the list into into csv / hyphen values
+mycourses = ['python', 'django', 'flask', 'fastAPI']
+mycourses_str = ' , '.join(mycourses)           # ',' or ' - '
+print(mycourses_str)
+
+# print from string back into a list
+new_list = mycourses_str.split(' - ')
+print(new_list)
+
+# crete an empty list
+empty_list = []
+print(empty_list)
+
+
+# Tuples is a Immutable data type , use ()
+tuple_1 = ('english', 'science', 'biology', 'arts')
+tuple_2 = tuple_1
+
+# print(tuple_1)
+# print(tuple_2)
+
+# tuple_1[0] = 'Social Science'     # comment out this to see the error
+print(tuple_1)
+print(tuple_2)
+
+# create an empty tuple
+empty_tuple = ()
+print(empty_tuple)
+
+# Sets are value unordered and no duplicate
+# since math is duplicate on it was removed
+cs_course = {'python', 'java', 'perl', 'linux', 'history'}
+art_course = {'history', 'math', 'design', 'commerce', 'arts'}
+print(cs_course)
+
+# to check if an item is in the set or not
+print('python' in cs_course)
+print('cloud' in cs_course)
+
+# print common items from the sets
+print(cs_course.intersection(art_course))
+
+# print difference between the first set and the second set
+print(cs_course.difference(art_course))
+
+# print all the items from multiple sets
+print(cs_course.union(art_course))
+
+# create an empty set
+empty_set = set()
+print(type(empty_set))
